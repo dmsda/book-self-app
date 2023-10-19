@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"
+      rel="stylesheet" />
+
+    <title>Bookshelf App</title>
+  </head>
+  <body>
+    <h1>Bookshelf App</h1>
+
+    <div class="bookshelves">
+      <div class="bookshelf" id="unread">
+        <h2>Belum selesai dibaca</h2>
+        <div class="books" id="unread-books">
+          <!-- Buku yang belum di baca -->
+        </div>
+      </div>
+      <div class="bookshelf" id="read">
+        <h2>Selesai dibaca</h2>
+        <div class="books" id="read-books">
+          <!-- Buku yang sudah dibaca -->
+        </div>
+      </div>
+    </div>
+
+    <div class="book-form">
+      <h2>Tambahkan Buku Baru</h2>
+      <input type="text" id="title" placeholder="Judul Buku" required />
+      <input type="text" id="author" placeholder="Penulis" required />
+      <input type="number" id="year" placeholder="Tahun Terbit" required />
+      <label for="isComplete">Selesai dibaca</label>
+      <input type="checkbox" id="isComplete" />
+      <button id="addBook">Tambah Buku</button>
+    </div>
+
+    <div class="search-bar">
+      <input type="text" id="search" placeholder="Cari buku..." />
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
